@@ -1,0 +1,8 @@
+<div class="form-group">
+    <label><%= display_name %></label>
+    <select name="<%= name %>" class="form-control">
+        <% for (var i = 0; i < values.length; ++i) { %>
+            <option value="<%= values[i].value %>"><%= values[i].label %></option>
+        <% } %>
+    </select>
+</div>
